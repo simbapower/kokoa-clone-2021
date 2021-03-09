@@ -5,9 +5,11 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  
 }
 .status-bar__column {
   width: 33%;
+  font-weight: 600;
 }
 .status-bar__column:first-child span {
   margin-right: 5px;
@@ -21,6 +23,9 @@
   justify-content: flex-end;
   align-items: center;
 }
-.status-bar__column .fa-battery-full {
+.status-bar__column .fa-battery-full{
   margin: 0px 5px;
+}
+.fa-bolt{
+  padding-right: 5px;
 }
