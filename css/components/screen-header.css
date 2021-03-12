@@ -2,10 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  padding-top: 50px;
-  opacity: 90%;
-  
+  padding: var(--horizontal-space);
   margin-bottom: 15px;
 }
 
@@ -13,29 +10,20 @@
   font-size: 32px;
   font-weight: 600;
 }
+
 .screen-header__icons span {
   margin-left: 25px;
-  position: relative;
 }
 
-.screen-header__point {
-  background-color: tomato;
-  border-radius: 5px;
-  width: 5px;
-  height: 5px;
-  display: flex;
-  position: absolute;
-  right: -72px;
-  top: -30px;
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
-.screen-header__point2 {
-  background-color: tomato;
-  border-radius: 5px;
-  width: 5px;
-  height: 5px;
-  display: flex;
-  position: absolute;
-  right: -122px;
-  top: -30px;
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
 }
